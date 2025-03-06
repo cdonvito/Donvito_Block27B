@@ -27,13 +27,11 @@ export default function Transactions() {
 
     // TODO: Dispatch the appropriate transaction action based on `action`
     if (action === "transfer") {
-      // The `transfer` action is dispatched with a payload containing
-      // the amount and the recipient.
       dispatch(transfer({ amount, recipient }));
     } else if (action === "withdraw") {
-      dispatch(withdrawal({ amount, recipient }));
+      dispatch(withdrawal({ amount }));
     } else if (action === "deposit") {
-      dispatch (deposit({ amount, recipient }));
+      dispatch (deposit({ amount }));
     }
   };
 
