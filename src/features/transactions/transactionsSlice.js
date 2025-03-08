@@ -52,7 +52,7 @@ const transactionsSlice = createSlice({
         type: "transfer",
         amount: payload.amount,
         balance: state.balance,
-        recipient: state.recipient,
+        recipient: payload.recipient,
       });
     },
   },

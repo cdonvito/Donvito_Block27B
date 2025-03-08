@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useSelector, useDispatch } from "react-redux"
+import { useSelector, useDispatch } from "react-redux";
 
 import { deposit, transfer, withdrawal } from "./transactionsSlice";
 import "./transactions.scss";
@@ -31,7 +31,7 @@ export default function Transactions() {
     } else if (action === "withdraw") {
       dispatch(withdrawal({ amount }));
     } else if (action === "deposit") {
-      dispatch (deposit({ amount }));
+      dispatch(deposit({ amount }));
     }
   };
 
