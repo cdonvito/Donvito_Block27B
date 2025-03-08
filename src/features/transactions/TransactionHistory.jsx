@@ -8,7 +8,7 @@ const TransactionRow = ({
 }) => (
   <tr>
     <th scope="row">
-      {type === "transfer" && recipient ? `Transfer to ${recipient}` : type}
+      {type === "transfer" && recipient ? `transfer to ${recipient}` : type}
     </th>
     <td>{amount.toFixed(2)}</td>
     <td>{balance.toFixed(2)}</td>
